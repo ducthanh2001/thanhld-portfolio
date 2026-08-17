@@ -1,0 +1,20 @@
+/* Site-specific overrides for the vendored ClawCaptcha (playcaptcha) card. */
+
+/* the clawcap card is always white (its own --cc-bg default), regardless of site theme — match the
+   stage backdrop to that instead of the site's dark background, so the card reads as one continuous
+   full-width surface instead of a boxed island floating on a contrasting background */
+.captcha-stage {
+  background:
+    radial-gradient(circle at 50% 15%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%),
+    #ffffff;
+}
+
+.captcha-card .clawcap {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* drop the shield/help icon row above the title — not needed for this one-off game */
+.captcha-card .clawcap-top {
+  display: none;
+}

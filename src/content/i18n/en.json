@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "Đức Thành — Frontend Developer",
+    "description": "Portfolio of Đức Thành, a Frontend Developer with 4+ years of experience in React.js, Next.js, Vue.js."
+  },
+  "hero": {
+    "kicker": "Hi, I'm",
+    "pitch": "4+ years building high-performance frontends — from enterprise dashboards to Web3 marketplaces.",
+    "downloadCv": "Download CV",
+    "contactMe": "Get in touch",
+    "scrollHint": "Scroll down"
+  }
+}
