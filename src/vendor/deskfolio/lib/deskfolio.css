@@ -756,6 +756,13 @@ a.df-proj-name:focus-visible .df-proj-scribble .df-scribble-pen {
   border-radius: 999px;
 }
 .df-proj-desc { font-size: 0.96rem; line-height: 1.55; }
+.df-proj-info {
+  margin: 0 0 0.3rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--df-ink-soft);
+}
+.df-proj-info b { color: var(--df-ink); font-weight: 700; }
 
 /* experience timeline */
 .df-xp {

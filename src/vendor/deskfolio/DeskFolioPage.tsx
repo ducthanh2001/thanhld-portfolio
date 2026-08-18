@@ -2231,10 +2231,12 @@ function getPortfolioPages(locale: Locale): React.ReactNode[] {
     <h3 className="df-hello">{vi ? 'dự án nổi bật' : 'selected work'}</h3>
     <div className="df-proj">
       <p className="df-proj-head"><DfProjName href="#projects" variant={0}>{deskProjects[0].title}</DfProjName><span className="df-proj-meta">{deskProjects[0].stack[0]}</span></p>
+      <p className="df-proj-info"><b>{deskProjects[0].period[locale]}</b> · {deskProjects[0].stack.join(', ')}</p>
       <Editable className="df-edit--body df-proj-desc" placeholder="describe it…" initial={deskProjects[0].summary[locale]} />
     </div>
     <div className="df-proj">
       <p className="df-proj-head"><DfProjName href="#projects" variant={2}>{deskProjects[1].title}</DfProjName><span className="df-proj-meta">{deskProjects[1].stack[0]}</span></p>
+      <p className="df-proj-info"><b>{deskProjects[1].period[locale]}</b> · {deskProjects[1].stack.join(', ')}</p>
       <Editable className="df-edit--body df-proj-desc" placeholder="describe it…" initial={deskProjects[1].summary[locale]} />
     </div>
   </div>,
@@ -2244,10 +2246,12 @@ function getPortfolioPages(locale: Locale): React.ReactNode[] {
     <h3 className="df-hello df-hello--lilac">{vi ? 'dự án khác' : 'more work'}</h3>
     <div className="df-proj">
       <p className="df-proj-head"><DfProjName href="#projects" variant={3}>{deskProjects[2].title}</DfProjName><span className="df-proj-meta">{deskProjects[2].stack[0]}</span></p>
+      <p className="df-proj-info"><b>{deskProjects[2].period[locale]}</b> · {deskProjects[2].stack.join(', ')}</p>
       <Editable className="df-edit--body df-proj-desc" placeholder="describe it…" initial={deskProjects[2].summary[locale]} />
     </div>
     <div className="df-proj">
       <p className="df-proj-head"><DfProjName href="#projects" variant={1}>{deskProjects[3].title}</DfProjName><span className="df-proj-meta">{deskProjects[3].stack[0]}</span></p>
+      <p className="df-proj-info"><b>{deskProjects[3].period[locale]}</b> · {deskProjects[3].stack.join(', ')}</p>
       <Editable className="df-edit--body df-proj-desc" placeholder="describe it…" initial={deskProjects[3].summary[locale]} />
     </div>
     <p className="df-sig">{vi ? 'còn nhiều hơn nữa ở phần Dự án' : '…and more in the Projects section'} <span className="df-heart" aria-hidden="true">♡</span></p>

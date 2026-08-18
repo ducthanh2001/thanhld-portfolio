@@ -190,7 +190,7 @@ export const experience: RoleEntry[] = [
   {
     id: "hospital",
     company: "Hospital Management System — Agiletech",
-    period: { vi: "Th9/2021 - Th1/2023", en: "Sep 2021 - Jan 2023" },
+    period: { vi: "Th7/2021 - Th1/2023", en: "Sep 2021 - Jan 2023" },
     teamSize: 8,
     stack: ["React.js", "Ant Design", "React Router", "Axios", "Redux Saga"],
     bullets: [
