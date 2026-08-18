@@ -1,6 +1,4 @@
-// TODO: drop in your real profile URLs — left as placeholders because
-// none were provided in the CV and guessing a username would be wrong.
 export const links = {
-  github: "#",
-  linkedin: "#",
+  github: "https://github.com/ducthanh2001",
+  linkedin: "https://www.linkedin.com/in/th%C3%A0nh-l%C3%AA-%C4%91%E1%BB%A9c-60aa64316/",
 };
