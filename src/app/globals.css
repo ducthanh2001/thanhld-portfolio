@@ -58,3 +58,41 @@ html {
     scroll-behavior: auto;
   }
 }
+
+/* loading skeleton for dynamically-imported sections — a soft shimmer sweep
+   instead of a flat pulsing block, so the pre-hydration state doesn't read as
+   an empty void on the dark background */
+.df-skeleton {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+.df-skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    color-mix(in srgb, var(--accent) 16%, transparent) 50%,
+    transparent 70%
+  );
+  animation: df-shimmer 2.2s ease-in-out infinite;
+}
+
+@keyframes df-shimmer {
+  0% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(60%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .df-skeleton::after {
+    animation: none;
+    opacity: 0.6;
+  }
+}

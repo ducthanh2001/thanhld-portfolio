@@ -2315,8 +2315,8 @@ function getPortfolioPages(locale: Locale): React.ReactNode[] {
         placeholder={vi ? 'một ghi chú nhỏ…' : 'a little note…'}
         initial={
           vi
-            ? 'Cuốn sổ này — hiệu ứng lật trang, các sticker kéo-thả — mình dùng lại từ DeskFolio, thư viện mã nguồn mở của mortspace (MIT). Phần nội dung bên trong là của mình.'
-            : "This book — the page-flip physics, the draggable stickers — comes from DeskFolio, an open-source library by mortspace (MIT). The content inside it is mine."
+            ? 'Một cuốn sổ nhỏ để lưu lại vài điều mình đã làm, đã nghĩ, và những gì mình muốn kể. Lật từng trang, xem như đang ghé qua bàn làm việc của mình vậy.'
+            : 'A little notebook to keep track of what I have made, what I have thought about, and the stories I want to tell. Flip through it like stopping by my desk.'
         }
       />
     </div>

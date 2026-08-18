@@ -5,7 +5,11 @@ import dynamic from "next/dynamic";
 const DeskFolio = dynamic(() => import("@/vendor/deskfolio").then((m) => m.DeskFolio), {
   ssr: false,
   loading: () => (
-    <div className="mx-auto h-[600px] w-full max-w-5xl animate-pulse rounded-3xl bg-surface-2" />
+    <div className="df-skeleton mx-auto flex h-[600px] w-full max-w-5xl items-center justify-center rounded-3xl">
+      <span aria-hidden className="select-none text-5xl font-bold tracking-tight text-foreground/10">
+        ĐT
+      </span>
+    </div>
   ),
 });
 

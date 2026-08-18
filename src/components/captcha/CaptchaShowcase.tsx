@@ -8,7 +8,11 @@ import "./captcha.css";
 const ClawCaptcha = dynamic(() => import("playcaptcha").then((m) => m.ClawCaptcha), {
   ssr: false,
   loading: () => (
-    <div className="mx-auto h-125 w-full max-w-full animate-pulse rounded-4xl bg-surface-2" />
+    <div className="df-skeleton mx-auto flex h-125 w-full max-w-full items-center justify-center rounded-4xl">
+      <span aria-hidden className="select-none text-4xl opacity-20">
+        🦖
+      </span>
+    </div>
   ),
 });
 
